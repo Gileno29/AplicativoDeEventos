@@ -4,7 +4,15 @@
 </head>
 <body>
 	<h3>Ola mundo com Spring boot</h3>
-
+	<h3><a href="/cadastrarEvento">Lista Eventos</a></h3>
+	<div th:each="evento : ${evento}">
+		<div class="row">
+			<p><span th:text="${evento.nome}"></span></p>
+			<p><span th:text="${evento.local}"></span></p>
+			<p><span th:text="${evento.data}"></span></p>
+			<p><span th:text="${evento.horario}"></span></p>
+		</div>
+	</div>
 
 </body>
 
