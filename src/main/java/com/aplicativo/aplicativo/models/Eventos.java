@@ -13,7 +13,7 @@ public class Eventos implements Serializable{
 	
 	@Id
 	@GeneratedValue(strategy= GenerationType.AUTO)
-	private long cod;
+	private long codigo;
 	private String nome;
 	private String local;
 	private String data;
@@ -21,10 +21,10 @@ public class Eventos implements Serializable{
 	
 	
 	public long getCod() {
-		return cod;
+		return codigo;
 	}
 	public void setCod(long cod) {
-		this.cod = cod;
+		this.codigo = cod;
 	}
 	public String getNome() {
 		return nome;

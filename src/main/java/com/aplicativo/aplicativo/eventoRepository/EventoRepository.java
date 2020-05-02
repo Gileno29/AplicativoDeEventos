@@ -5,5 +5,5 @@ import org.springframework.data.repository.CrudRepository;
 import com.aplicativo.aplicativo.models.Eventos;
 
 public interface EventoRepository extends CrudRepository<Eventos, String>{
-
+	Eventos findByCodigo(long codigo);
 }
